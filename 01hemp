@@ -1,0 +1,14 @@
+#! /bin/sh
+
+# stop any running copies of the hemp media player
+
+echo -n "Stopping hemp..."
+
+HEMP=$(realpath /usr/bin/hemp)
+
+for p in $(/bin/ps --no-heading -C hemp -o pid); do
+    if [ $(realpath /proc/$p/exe) == $HEMP ]; then
+        su $(/usr/bin/stat -c %U /proc/$p/exe) -c "/bin/kill -HUP $p"
+    fi
+done
+echo "done."

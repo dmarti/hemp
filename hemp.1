@@ -1,0 +1,45 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.\" First parameter, NAME, should be all caps
+.\" Second parameter, SECTION, should be 1-8, maybe w/ subsection
+.\" other parameters are allowed: see man(7), man(1)
+.TH HEMP 1 "March  22, 2009"
+.\" Please adjust this date whenever revising the manpage.
+.SH NAME
+hemp \- headless music player
+.SH SYNOPSIS
+.B hemp
+.RI [ options ] " files" ...
+.br
+.SH DESCRIPTION
+\fBhemp\fP is a simple command-line music player.  By default,
+only one copy attempts to run at a time.  If a copy is already
+running, starting a new instance will send a D-Bus message to
+the existing one and exit.
+
+This program uses GStreamer, so should play any format that
+your installed GStreamer plugins support.
+
+.SH OPTIONS
+hemp follows the GNU long option convention, with long
+options starting with two dashes (`-').  
+.TP
+.B \-\-back
+Go back to the previous track
+.TP
+.B \-\-fg
+Play in the foreground.
+.TP
+.B \-\-next
+Skip to next track.
+.TP
+.B \-\-pause
+Pause.
+.TP
+.B \-\-playpause
+Pause if playing, play if paused (good for binding to the seldom-used
+"Pause" key.)
+.SH AUTHOR
+hemp was written by Don Marti <dmarti@zgp.org>.
+.PP
+This manual page was written by Don Marti <dmarti@zgp.org>,
+for the Debian project (and may be used by others).

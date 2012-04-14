@@ -1,0 +1,16 @@
+Source: hemp
+Section: sound
+Priority: extra
+Maintainer: Don Marti <dmarti@zgp.org>
+Build-Depends: debhelper (>= 7), libglib2.0-dev, libdbus-glib-1-dev,
+	libgstreamer0.10-dev
+Standards-Version: 3.8.0
+Homepage: http://hemp.zgp.org/
+
+Package: hemp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Headless media player
+ Plays anything that GStreamer will, but doesn't make the user play
+ music librarian.  Stops the sound on suspend so you don't annoy the
+ whole library when you open up your laptop there.

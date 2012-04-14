@@ -1,0 +1,16 @@
+This package was debianized by Don Marti <dmarti@zgp.org> on
+Sat, 07 Mar 2009 14:32:00 -0800.
+
+Upstream Author: same
+
+Copyright:
+
+    <Copyright (C) 2009 Don Marti <dmarti@zgp.org>>
+
+License:
+
+    LGPL-3
+
+The Debian packaging is copyright 2009, Don Marti <dmarti@zgp.org> and
+has the same license as the program itself.
+License can be found in the file `/usr/share/common-licenses/LGPL-3'.

@@ -1,0 +1,5 @@
+files
+hemp.debhelper.log
+hemp.substvars
+hemp.postinst.debhelper
+hemp.postrm.debhelper

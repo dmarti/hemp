@@ -1,0 +1,62 @@
+hemp: HEadless Music Player
+
+Don Marti <dmarti@zgp.org>
+
+Project status: It Works For Me(tm); plenty of broken stuff.
+
+
+Goals
+=====
+
+  * Don't make the user play music librarian.
+    Keeps a hotlist and coldlist of tracks you
+    have listened to, and just play something.
+
+  * use GStreamer to handle codecs and stuff.
+
+  * Control a running process with D-Bus.
+
+  * Play directory contents if given a directory
+    as argument.
+
+  * LGPL because that's what GStreamer is.
+
+
+TODO items
+==========
+
+  * Parse m3u files.
+
+  * Research D-Bus for other signals to listen to such
+    as an "I'm on the phone" signal -- this is what the
+    "AUTOPAUSE" state is for.
+
+
+Using the Pause key under metacity
+==================================
+
+In gconf-editor, under
+`apps/metacity/global_keybindings`:
+
+        run_command_1    Pause
+        run_command_2    <Alt>Pause
+
+Under `keybinding_commands`
+
+        command_1    hemp --playpause
+        command_2    hemp --skip
+
+
+How to make a deb package
+=========================
+
+Build the packages with:
+
+        debuild -uc -us -i\.git -I.git
+
+
+How to make and install in /usr/local
+=====================================
+
+make && make install
+
