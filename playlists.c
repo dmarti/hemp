@@ -51,7 +51,7 @@ init_lists (void)
 {
     FILE *fp = NULL;
     char *uri = NULL;
-    int len;
+    ssize_t len;
     struct hemp_playlist_entry *e;
   
     hotlist = g_queue_new();
