@@ -33,8 +33,7 @@
 
       "Work" shall mean the work of authorship, whether in Source or
       Object form, made available under the License, as indicated by a
-      copyright notice that is included in or attached to the work
-      (an example is provided in the Appendix below).
+      copyright notice that is included in or attached to the work.
 
       "Derivative Works" shall mean any work, whether in Source or Object
       form, that is based on (or derived from) the Work and for which the
@@ -69,15 +68,21 @@
 
    2. Limitations on Fields of Endeavor
 
-      (a) This License does not apply to any copies of the Work, or 
+      (a) This License does not apply to any copies of the Work, or any
           copies of any Derivative Works, used in connection with conduct
 	  in violation of the United Nations Universal Declaration of Human
 	  Rights.
 
-      (b) This License does not apply to any copies of the Work, or copies
-          of any Derivative Works, used for processing of information
-	  pertaining to any natural person without the Consent of that
-	  person.
+      (b) This License does not apply to any copies of the Work, or any
+          copies of any Derivative Works, used in connection with any
+	  infringement of any natural right of any natural person, including
+	  without limitation the natural right of cognitive liberty and the
+	  natural right to keep and bear arms.
+
+      (c) This License does not apply to any copies of the Work, or any
+          copies of any Derivative Works, used in connection with the
+	  processing of information pertaining to any natural person without
+	  the Consent of that person.
 
    3. Grant of Copyright License. Subject to the terms and conditions of
       this License, each Contributor hereby grants to You a perpetual,
@@ -199,10 +204,6 @@
        http://www.apache.org/licenses/LICENSE-2.0
 
    See also: the Hippocratic License at
-
+   
        https://firstdonoharm.dev/
 
-
-   APPENDIX
-
-   TK
