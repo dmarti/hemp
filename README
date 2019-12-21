@@ -55,6 +55,12 @@ Build the packages with:
         debuild -uc -us -i\.git -I.git
 
 
+Building on Fedora
+==================
+
+
+
+
 How to make and install in /usr/local
 =====================================
 

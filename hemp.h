@@ -1,6 +1,6 @@
 #include <error.h>
-#include <glib.h>
 #include <dbus/dbus.h>
+#include <dbus/dbus-glib-lowlevel.h>
 #include <dirent.h>
 #include <fcntl.h>
 #include <getopt.h>

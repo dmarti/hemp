@@ -1,10 +1,10 @@
 OBJS = hemp.o dbus.o playlists.o
 
 hemp : $(OBJS) 
-	gcc -ldbus-glib-1 -ldbus-1 -lgstreamer-0.10 -lgobject-2.0 -lglib-2.0 $(OBJS) -o hemp 
+	gcc -Werror -ldbus-glib-1 -ldbus-1 -lgstreamer-0.10 -lgobject-2.0 -lglib-2.0 $(OBJS) -o hemp 
 
 %.o : %.c 
-	gcc -std=gnu99 -c `pkg-config --cflags glib-2.0 dbus-glib-1 gstreamer-0.10` -o $@ $<
+	gcc -Werror -std=gnu99 -c `pkg-config --cflags glib-2.0 dbus-glib-1 gstreamer-0.10` -o $@ $<
 
 install : hemp
 	install -d ${DESTDIR}/usr/bin
